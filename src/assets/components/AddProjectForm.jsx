@@ -12,11 +12,7 @@ export default function AddProjectFormModal({ handleCancel, onSave }) {
   const form = useRef();
   function handleSave() {
     const formData = new FormData(form.current);
-    const project = {
-      title: formData.get("title"),
-      description: formData.get("description"),
-      dueDate: formData.get("due date"),
-    };
+    const project = Object.fromEntries(formData.entries());
     onSave(project);
   }
   return (
