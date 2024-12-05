@@ -13,7 +13,7 @@ export default function AddProjectFormModal({ handleCancel, onSave }) {
   function handleSave() {
     const formData = new FormData(form.current);
     const project = Object.fromEntries(formData.entries());
-    onSave(project);
+    onSave({ ...project, tasks: [] });
   }
   return (
     <div className='mt-24 w-full pr-48 pl-10'>
