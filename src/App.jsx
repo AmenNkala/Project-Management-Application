@@ -1,3 +1,4 @@
+import Button from "./assets/components/Button";
 import logo from "./assets/logo.png";
 function App() {
   return (
@@ -6,9 +7,12 @@ function App() {
         <h2 className='mb-8 font-bold uppercase md:text-xl text-stone-200'>
           Your projects
         </h2>
-        <button className='px-6 py-2 rounded-md bg-stone-800 text-stone-400 hover:bg-stone-950'>
+        <Button
+          className='px-6 py-2 rounded-md bg-stone-800 text-stone-400 hover:bg-stone-950'
+          handleClick={() => 0}
+        >
           + Add Project
-        </button>
+        </Button>
       </aside>
       <main className='flex-1 h-screen my-8 flex gap-8'>
         <div className='mt-24 text-center w-full'>
@@ -23,9 +27,12 @@ function App() {
           <p className='text-stone-600 mb-8'>
             Select project or get started with a new one
           </p>
-          <button className='px-4 py-2 text-xs md:text-base rounded-md bg-stone-700 text-stone-400 hover:bg-stone-600 hover:text-stone-100 w-auto'>
+          <Button
+            className='px-4 py-2 text-xs md:text-base rounded-md bg-stone-700 text-stone-400 hover:bg-stone-600 hover:text-stone-100 w-auto'
+            handleClick={() => 0}
+          >
             Create New Project
-          </button>
+          </Button>
         </div>
       </main>
     </div>
