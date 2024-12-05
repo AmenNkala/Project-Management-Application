@@ -4,7 +4,7 @@ import Splash from "./assets/components/Splash";
 import Aside from "./assets/components/Aside";
 import ProjectView from "./assets/components/ProjectView";
 
-const PROJECTS = [
+/* const PROJECTS = [
   {
     title: "Learn React",
     description: `Learning something new doesn't have to be very different. If you have a map or guide that lets you know "if you first learn A, next attempt to learn B. Then you will find C much easier", things will be much smoother for you.
@@ -19,9 +19,9 @@ In this guide, we will break things down into phases and build the roadmap to le
     "due date": "2025-03-30",
     tasks: ["Learn the basisc", "Move to advanced", "Recap router"],
   },
-];
+]; */
 function App() {
-  const [projects, setProjects] = useState(PROJECTS);
+  const [projects, setProjects] = useState([]);
   const [isAddingProject, setIsAddingProject] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
